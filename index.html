@@ -188,6 +188,43 @@
     height: 70px;
   }
 }
+
+    /* FINAL FIX — Perfect header centering on mobile */
+@media (max-width: 600px) {
+
+  header {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    padding: 2rem 1rem !important;
+  }
+
+  header h1 {
+    font-size: 1.6rem !important;
+    line-height: 1.25 !important;
+    margin: 0 auto !important;
+    max-width: 90% !important;
+    word-wrap: break-word;
+  }
+
+  header p {
+    font-size: 0.9rem !important;
+    line-height: 1.3 !important;
+    margin: 0.4rem auto 0 !important;
+    max-width: 90% !important;
+    word-wrap: break-word;
+  }
+
+  .header-spacer {
+    height: 120px !important;
+  }
+
+  .header-spacer.shrink {
+    height: 70px !important;
+  }
+}
   </style>
 </head>
 
@@ -441,6 +478,7 @@
 
 </body>
 </html>
+
 
 
 
