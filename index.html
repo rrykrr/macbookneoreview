@@ -151,7 +151,33 @@
   width: 100%;
   min-width: 600px; /* prevents squishing */
 }
-    
+    /* Fix header overflow on mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  header p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+  }
+
+  .header-spacer {
+    height: 120px;
+  }
+
+  .header-spacer.shrink {
+    height: 70px;
+  }
+}
   </style>
 </head>
 
@@ -303,6 +329,11 @@
     </tr>
   </table>
 </div>
+  <p>
+   Scroll horizontally on mobile*
+    
+  </p>
+  
 <p>
   The comparison highlights that while Chromebooks and budget Windows laptops may offer lower upfront costs,
   they generally compromise on build quality, long‑term reliability, and performance consistency. The Neo’s
@@ -400,4 +431,5 @@
 
 </body>
 </html>
+
 
