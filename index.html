@@ -140,6 +140,18 @@
       font-size: 0.95rem;
       margin-bottom: 0.5rem;
     }
+
+    /* Make tables mobile-friendly */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 600px; /* prevents squishing */
+}
+    
   </style>
 </head>
 
@@ -248,8 +260,10 @@
     tasks but costs significantly more in Australia.
   </p>
 
+  
   <h2>5. Comparison Table</h2>
 
+ <div class="table-container">
   <table>
     <tr>
       <th>Category</th>
@@ -288,6 +302,7 @@
       <td>2–4 years</td>
     </tr>
   </table>
+</div>
 <p>
   The comparison highlights that while Chromebooks and budget Windows laptops may offer lower upfront costs,
   they generally compromise on build quality, long‑term reliability, and performance consistency. The Neo’s
@@ -385,3 +400,4 @@
 
 </body>
 </html>
+
